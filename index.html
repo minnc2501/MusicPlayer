@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/music-note-favicon.png">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head> 
+<body>
+    <div class="container" style="background-image: url(./assets/img/bg.webp)">
+        <div class="grid wide">
+            <div class="header ">
+                <div class="header_logo">
+                    <div class="header_logo-img">
+                        <ion-icon name="radio-outline"></ion-icon>
+                    </div>
+                    <div class="header_logo-text">Music Player</div>
+                </div>
+                <div class="header_lookup">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                    <input class="header_lookup-input" type="text" placeholder="What are you looking for?">
+                </div>
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="info">
+                    <div class="info_img">
+                        <img src="./assets/img/avt-info.jpg" alt="">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="info_text">
+                        <h3 class="info_text-name">Nguyen Can Min</h3>
+                        <span class="info_text-type_music">Electro, New Pop, Vibes</span>
+                        <p class="info_text-dec hide-on-mobile-tablet">You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth. <br />I’m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can’t handle me at my worst, then you sure as hell don’t deserve me at my best. <br /> Things change. And friends leave. Life doesn’t stop for anybody.</p>
+                        <p class="info_text-dec hide-on-web">You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.</p>
+                        <div class="btn hide-on-mobile-tablet">
+                            <div class="btn_playall active">PLAY ALL</div>
+                            <div class="btn_mix active">MIX</div>
+                            <div class="btn_favour">FAVOURITES</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="song_list">
+                <div class="grid wide">
+                    <div class="nav hide-on-mobile-tablet">
+                        <p class="nav_active">RECOMMENDED</p>
+                        <p >NEW RELEASES</p>
+                        <p>TOP CHARTS</p>
+                        <p>MOODS</p>
+                        <p>AROUND YOU</p>
+                    </div>
+                    <div class="border"></div>
+                </div>
+            </div>
+            
+            <div class="top_track">
+                <div class="grid wide">
+                    <div class="top_track-heading">
+                        <p>Top Tracks</p>
+                    </div>
+                    <div class="top_track-nav">
+                        <ul class="top_track-nav_list-top hide-on-mobile-tablet">
+                            <li class="top_track-nav_item">
+                                <p>#</p>
+                                <p>SONG</p>
+                                <p>ARTIST</p>
+                                <p>DAILY PLAYS</p>
+                                <p>TIME</p>
+                                <p>OPTIONS</p>
+                            </li>
+                        </ul>
+                        <div class="playlist">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress_bar">
+            <input id="file" class="progress" type="range" value="0" step="0.1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+            
+            <div class="progress_bar-info level_left">
+                <div class="progress_bar-info_img">
+                    <img src="./assets/img/img3.png" alt="">
+                </div>
+                <div class="progress_bar-info_text">
+                    <p class="progress_bar-info_text-name">ádasd</p>
+                    <span class="progress_bar-info_text-artist">Masew x Khoi Vu</span>
+                </div>
+            </div>
+
+            <div class="player_control level_center">
+                <div class="actions">
+                    <button class="btn_control btn-shuffle"><ion-icon name="shuffle-outline"></ion-icon></button>
+                    <button class="btn_control btn-prev"><ion-icon name="play-skip-back"></ion-icon></button>
+                    <div class="btn_control btn-play">
+                        <i class="player"><ion-icon name="play-circle-outline"></ion-icon></i>
+                        <i class="pause playing"><ion-icon name="pause-circle-outline"></ion-icon></i>
+                    </div>
+                    <button class="btn_control btn-next"><ion-icon name="play-skip-forward"></ion-icon></button>
+                    <button class="btn_control btn-repeat"><ion-icon name="repeat"></ion-icon></button>
+                </div>
+            </div>
+
+            <div class="audio_control level_right hide-on-mobile-tablet">
+                <button class="btn_control btn-volume">
+                    <ion-icon name="volume-high"></ion-icon>
+                    <div class="battatloa playing"></div>
+                </button>
+                
+                <input class="volume" type="range" value="1" step="0.01" min="0" max="1">
+                <button class="btn_control btn-list"><ion-icon name="reorder-four"></ion-icon></button>
+            </div>
+        </div>
+        <div class="footer hide-on-web">
+            Chúc các bạn nghe nhạc vui vẻ!
+        </div>
+    </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

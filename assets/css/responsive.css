@@ -1,0 +1,173 @@
+@media (max-width: 1023px) {
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header_logo-text {
+        position: relative;
+        left: 90%;
+    }
+    .icon-search.md.hydrated {
+        position: absolute;
+        left: 147px;
+        top: 16px;
+    }
+    .info_img img {
+        width: 70px;
+        height: auto;
+        border-radius: 4px;
+    }
+    .info_text-name{
+        font-size:32px;
+    }
+    .info_text-type_music {
+        font-size: 16px;
+    }
+
+    .info_text-dec {
+        margin-left: -78px;
+        font-size: 16px;
+        color: #ccc;
+    }
+    
+    .progress_bar {
+        position: fixed;
+        top: 44.5%;
+        border-bottom: 1px solid #00c6e7;
+    }
+
+    .level_left {
+        top: -97%;
+        left: 0;
+        right: 0;
+        bottom: 72px;
+        z-index: -999;
+        background: #007e7ea1;
+        border-radius: 5px;
+    }
+
+    .progress_bar-info_img {
+        padding: 2px;
+    }
+
+    .progress_bar-info_text-name {
+        font-size: 22px;
+        font-weight: 300;   
+    }
+
+    .progress_bar-info_text-artist {
+        font-size: 14px;
+        color: #ccc;
+        line-height: 16px;
+    }
+
+    .top_track {
+        margin-top: 150px;
+    }
+
+    .playlist {
+        overflow: hidden;
+    }
+
+    .top_track-heading::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 120px;
+        height: 1px;
+        background: #ccc;
+    }
+    .top_track-nav_item {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .top_track-nav_item p {
+        flex: 1;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .top_track-nav_item p span {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .top_track-nav_item p span:last-child {
+        font-size: 16px;
+    }
+
+    .top_track-nav_item p span {
+        margin: 0;
+    }
+
+    .top_track-nav_item p:nth-child(2) {
+        padding-right: 20px;
+        min-width: 135px;
+    }
+    .top_track-nav_item p:nth-child(3) {
+        padding-right: 20px;
+        min-width: 80px;
+    }
+
+    .top_track-nav_item p:nth-child(5) {
+        padding-right: 40px;
+    }
+
+    .top_track-nav {
+        margin-top: 16px;
+        max-height: 251px;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        color: #ccc;
+        height: 24px;
+        text-align: center;
+    }
+
+    .icon-search {
+        padding: 10px;
+        position: relative;
+    }
+
+    .header_lookup-input {
+        position: absolute;
+        bottom: -72px;
+        left: -191px;
+        display: none;
+        animation: ani 0.4s forwards;
+    }
+    .enabled {
+        display: block;
+    }
+
+    .icon-search:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+@-webkit-keyframes ani {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 28px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .hide-on-web {
+        display: none;
+    }
+}
+    
